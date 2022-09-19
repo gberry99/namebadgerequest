@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset=""UTF-8>
+    <meta name="viewport" conten="width=device-width", initial-scale="1.0">
+    <title>WCR Name Badge Request Form</title>
+    <link rel="stylesheet" href="./style.css">
+ </head>
+
+ <body>
+    <selection>
+        <article>
+            <div>
+                <h1>West Central Region Name Badge Request</h1>
+            </div>
+
+            <div>
+                <label for="sub title">This is a name badge request for facilities within West Central Region: Arnett Hospital and outpatient locations, Frankfort Hospital, White Memorial Hospital. If you are located in the academic health center, submit a badge request here. If you work at a different IU Health facility, please contact your local HR team for assistance.<span style="font-size: 35px"></span></label>
+            </div>
+
+            <div>
+                <label for="info">If you are requesting a badge due to loss or damage the fee will be $15.00 (This includes the fee for a replacement clip as well). Please send exact cash to IU Health Arnett Secuirty, ATTN: Jon Laird</label>
+            </div>
+
+            <div>
+                <label for="first">First Name<span style="font-size: 20px">*</span></label>
+                <input type="text" id="first" placeholder="First Name" pattern="[A,Z], [a,z], [0,9]" required>
+            </div>
+           
+            <div>
+                <label for="last">Last Name<span style="font-size: 20px">*</span></label>
+                <input type="text" id="last" placeholder="Last Name" pattern="[A,Z], [a,z], [0,9]" required>
+            </div>
+            <div>
+                <label for="Credentials">Credentials<span style="font-size: 20px">*</span></label>
+                <input type="text" id="Credentials" placeholder="EX: MD, BSN, PhD, etc." pattern="[A,Z], [a,z], [0,9]" required>
+            </div>
+            <div>
+                <label for="Job">Job Title<span style="font-size: 20px">*</span></label>
+                <input type="text" id="Job" placeholder="Job Title" pattern="[A,Z], [a,z], [0,9]" required>
+            </div>
+            <div>
+                <label for="Location">Location<span style="font-size: 20px">*</span></label>
+                <input type="text" id="Location" placeholder="Location" pattern="[A,Z], [a,z], [0,9]" required>
+            </div>
+
+            <div>
+                <label for="Reason for Request">Reason for Request<span style="font-size: 20px">*</span></label>
+            </div>
+
+            <div>
+                <span>
+                    <input type="radio" id="Lost" value="gender" required>
+                    <lable for="Lost">Lost</lable>
+                </span>
+
+                <span>
+                    <input type="radio" id="Broken" value="gender" required>
+                    <lable for="Broken">Broken</lable>
+                </span>
+
+                <span>
+                    <input type="radio" id="Name Change" value="gender" required>
+                    <lable for="Name Change">Name Change</lable>
+                </span>
+
+                <span>
+                    <input type="radio" id="Title Change" value="gender" required>
+                    <lable for="Title Change">Title Change</lable>
+                </span>
+
+                <span>
+                    <input type="radio" id="Other" value="gender" required>
+                    <lable for="Other">Other</lable>
+                </span>
+            </div>
+
+            <div>
+                <label for="Email">Contact Email<span style="font-size: 20px"></span></label>
+                <input type="text" id="Email" placeholder="Contact Email" pattern="[A,Z], [a,z], [0,9]">
+            </div>
+
+            <div>
+                <label for="Requestor">Name of Person Requesting Name Badge: only if different than name appearing on the badge<span style="font-size: 20px">*</span></label>
+                <input type="text" id="Requestor" placeholder="Name" pattern="[A,Z], [a,z], [0,9]">
+            </div>
+
+            <div>
+                <label for="Notice">Once you submit the form to Human Resources, it will be reviewed and emailed to security to be pritned. You will be copied on the email to security and notified when your badge is ready to be picked up.<span style="font-size: 35px"></span></label>
+            </div>
+
+            <div>
+                <button>Submit</button>
+            </div>
+        </article>
+    </selection>
+
+ </body>
+
+ <form method="POST" action="https://formsubmit.co/gberry@iuhealth.com" enctype="multipart/form-data">
+    <input type="email" name="email" placeholder="Your email">
+    <textarea name="message" placeholder="Details of your problem"></textarea>
+    <input type="file" name="attachment" accept="image/png, image/jpeg">
+    <button type="submit">Send Test</button>
+</form>
+
+ </html>
